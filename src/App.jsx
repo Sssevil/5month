@@ -13,6 +13,7 @@ function App() {
         <Route path='/' element={<Layout/>}>
           <Route index element={<FormPage/>}/>
           <Route path='post' element={<PostPage/>}/>
+          <Route path="*" element={<h1>404</h1>} />
         </Route>
       </Routes>
     </>
