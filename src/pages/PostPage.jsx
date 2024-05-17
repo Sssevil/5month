@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 const PostPage = () => {
     const [posts,setPosts]=useState([])
@@ -16,7 +17,10 @@ const PostPage = () => {
         <div>
             <ol>
                 {
-                    posts.map(post => <li key={post.id}> {post.title}</li> )
+                    posts.map(post =>
+                        <li key={post.id}>
+                            <Link to={`/posts/${post.id}`}> {post.title} </Link>
+                        </li> )
                 }
             </ol>
         </div>

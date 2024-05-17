@@ -25,3 +25,7 @@ form {
   flex-direction: column;
   gap:10px;
 }
+
+nav li a.active {
+  color: red;
+}
