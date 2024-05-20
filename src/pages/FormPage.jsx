@@ -29,7 +29,7 @@ const FormPage = () => {
                 body: post.body
             })
             console.log(response.data)
-            navigate('/post')
+            navigate('/posts')
         } catch (error) {
             console.log('Ошибка: ' + error)
         }
